@@ -1,0 +1,18 @@
+configuration {
+	modi: "drun";
+    show-icons: false;
+    display-drun: "[RUN]";
+    disable-history: true;
+    matching: "regex";
+
+    drun {
+        parse-user: true;
+        parse-system: true;
+    }
+}
+
+mainbox {
+    children: [ "inputbar", "listview"];
+}
+
+@theme "catppuccin-mocha"
